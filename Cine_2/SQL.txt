@@ -1,0 +1,14 @@
+CREATE TABLE MOVIE(
+	id		number(10) GENERATED ALWAYS AS IDENTITY
+	STARTWITH 1
+	MINVALUE 1
+	MAXVALUE 9999999
+	INCREMENT BY 1,
+	
+	titulo		varchar(200),
+	director	varchar(200),
+	anno		integer(4),
+	duracion	integer(4)
+	genero		varchar(200),
+	CONTRAINS PK_MOVIE PRIMARY KEY (id)
+);
